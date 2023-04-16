@@ -12,7 +12,7 @@ app.use(express.json())
 
 // main routes
 app.use('/api/goals', require('./routes/goalRoutes'));
-
+app.use('/api/users', require('./routes/userRoutes'));
 
 //Connect to the database before listening
 connectDB().then(() => {
